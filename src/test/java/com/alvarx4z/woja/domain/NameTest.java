@@ -26,4 +26,13 @@ final class NameTest {
             () -> new Name(null)
         );
     }
+
+    @Test
+    @DisplayName("Should throw IllegalArgumentException when blank value")
+    void givenNameWithBlankValue_whenInstantiating_thenThrowIllegalArgumentException() {
+        assertThrows(
+            IllegalArgumentException.class,
+            () -> new Name("")
+        );
+    }
 }
