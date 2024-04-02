@@ -4,7 +4,9 @@ import com.alvarx4z.woja.domain.Name;
 
 public final class NameHelper {
 
-    private static final String A_VALUE = "Vol'jin";
+    public static final String A_VALUE = "Vol'jin";
 
-    public static final Name A_NAME = new Name(A_VALUE);
+    public static Name aName(String value) {
+        return new Name(value);
+    }
 }
