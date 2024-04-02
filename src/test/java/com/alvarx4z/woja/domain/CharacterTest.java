@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Test;
 
 import static com.alvarx4z.woja.helper.CharacterHelper.aCharacter;
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 final class CharacterTest {
 
@@ -15,5 +16,14 @@ final class CharacterTest {
 
         assertThat(character).isInstanceOf(Character.class);
         assertThat(character.getName()).isInstanceOf(Name.class);
+    }
+
+    @Test
+    @DisplayName("Should throw IllegalArgumentException when any null value")
+    void givenCharacterWithANullValue_whenInstantiating_thenThrowIllegalArgumentException() {
+        assertThrows(
+            IllegalArgumentException.class,
+            () -> new Character(null)
+        );
     }
 }
