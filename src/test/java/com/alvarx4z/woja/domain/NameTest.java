@@ -1,9 +1,10 @@
 package com.alvarx4z.woja.domain;
 
-import com.alvarx4z.woja.helper.NameHelper;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import static com.alvarx4z.woja.helper.NameHelper.A_VALUE;
+import static com.alvarx4z.woja.helper.NameHelper.aName;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
@@ -12,10 +13,10 @@ final class NameTest {
     @Test
     @DisplayName("Should instantiate correctly a Name")
     void givenName_whenInstantiating_thenInstantiatedCorrectly() {
-        Name name = NameHelper.A_NAME;
+        Name name = aName(A_VALUE);
 
         assertThat(name).isInstanceOf(Name.class);
-        assertThat(name.getValue()).isEqualTo(NameHelper.A_NAME.getValue());
+        assertThat(name.getValue()).isEqualTo(A_VALUE);
     }
 
     @Test
@@ -23,7 +24,7 @@ final class NameTest {
     void givenNameWithNullValue_whenInstantiating_thenThrowIllegalArgumentException() {
         assertThrows(
             IllegalArgumentException.class,
-            () -> new Name(null)
+            () -> aName(null)
         );
     }
 
@@ -32,7 +33,7 @@ final class NameTest {
     void givenNameWithBlankValue_whenInstantiating_thenThrowIllegalArgumentException() {
         assertThrows(
             IllegalArgumentException.class,
-            () -> new Name("")
+            () -> aName("")
         );
     }
 }
