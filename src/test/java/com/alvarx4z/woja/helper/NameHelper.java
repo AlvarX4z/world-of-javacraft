@@ -2,7 +2,7 @@ package com.alvarx4z.woja.helper;
 
 import com.alvarx4z.woja.domain.Name;
 
-public class NameHelper {
+public final class NameHelper {
 
     private static final String A_VALUE = "Vol'jin";
 
