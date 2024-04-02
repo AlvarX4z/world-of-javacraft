@@ -6,7 +6,7 @@ public final class NameHelper {
 
     public static final String A_VALUE = "Vol'jin";
 
-    public static Name aName(String value) {
-        return new Name(value);
+    public static Name aName() {
+        return new Name(A_VALUE);
     }
 }
