@@ -2,7 +2,7 @@ package com.alvarx4z.woja.domain;
 
 import com.alvarx4z.woja.domain.invariants.NotNullNorEmptyString;
 
-public class Name extends NotNullNorEmptyString {
+public final class Name extends NotNullNorEmptyString {
 
     private final String value;
 
