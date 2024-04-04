@@ -13,6 +13,8 @@ A Java and Spring Boot API application modeled after the idea of a Playable Char
 - Java 21 (Temurin)
 - Gradle
 - Spring Boot
+- PostgreSQL
+- Docker
 - Git
 - GitHub
 - GitHub Dependabot
