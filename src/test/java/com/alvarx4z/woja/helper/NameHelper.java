@@ -7,6 +7,6 @@ public final class NameHelper {
     public static final String A_VALUE = "Vol'jin";
 
     public static Name aName() {
-        return new Name(A_VALUE);
+        return Name.of(A_VALUE);
     }
 }

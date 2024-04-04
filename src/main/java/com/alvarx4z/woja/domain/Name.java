@@ -6,12 +6,16 @@ public final class Name extends NotNullNorEmptyString {
 
     private final String value;
 
-    public Name(String value) {
+    private Name(String value) {
         super(value);
         this.value = value;
     }
 
     public String getValue() {
         return value;
+    }
+
+    public static Name of(String value) {
+        return new Name(value);
     }
 }
