@@ -3,6 +3,8 @@ package com.alvarx4z.woja.domain;
 import com.alvarx4z.woja.helper.NameHelper;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.NullAndEmptySource;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
@@ -18,21 +20,13 @@ final class NameTest {
         assertThat(name.getValue()).isEqualTo(NameHelper.A_VALUE);
     }
 
-    @Test
-    @DisplayName("Should throw IllegalArgumentException when null value")
-    void givenNameWithNullValue_whenInstantiating_thenThrowIllegalArgumentException() {
+    @ParameterizedTest
+    @NullAndEmptySource
+    @DisplayName("Should throw IllegalArgumentException when invalid values")
+    void givenInvalidNameValues_whenInstantiating_thenThrowIllegalArgumentException(String value) {
         assertThrows(
             IllegalArgumentException.class,
-            () -> new Name(null)
-        );
-    }
-
-    @Test
-    @DisplayName("Should throw IllegalArgumentException when blank value")
-    void givenNameWithBlankValue_whenInstantiating_thenThrowIllegalArgumentException() {
-        assertThrows(
-            IllegalArgumentException.class,
-            () -> new Name("")
+            () -> Name.of(value)
         );
     }
 }
