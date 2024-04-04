@@ -1,5 +1,7 @@
 package com.alvarx4z.woja.domain;
 
+import com.alvarx4z.woja.domain.shared.Name;
+
 public class Character {
 
     private final Name name;
