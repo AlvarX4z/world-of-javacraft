@@ -10,3 +10,5 @@ updates:
       timezone: "Europe/Madrid"
     labels:
       - "dependencies"
+    assignees:
+      - "AlvarX4z"
