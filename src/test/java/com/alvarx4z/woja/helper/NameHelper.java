@@ -1,6 +1,6 @@
 package com.alvarx4z.woja.helper;
 
-import com.alvarx4z.woja.domain.Name;
+import com.alvarx4z.woja.domain.shared.Name;
 
 public final class NameHelper {
 

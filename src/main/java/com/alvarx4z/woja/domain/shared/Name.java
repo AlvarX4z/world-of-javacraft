@@ -1,4 +1,4 @@
-package com.alvarx4z.woja.domain;
+package com.alvarx4z.woja.domain.shared;
 
 import com.alvarx4z.woja.domain.invariants.NotNullNorEmptyString;
 
