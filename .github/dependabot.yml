@@ -12,3 +12,5 @@ updates:
       - "dependencies"
     assignees:
       - "AlvarX4z"
+    commit-message:
+      prefix: "DEPENDENCY: "
