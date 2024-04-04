@@ -4,6 +4,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 final class PositiveIntegerTest {
 
@@ -14,5 +15,14 @@ final class PositiveIntegerTest {
 
         assertThat(number).isInstanceOf(PositiveInteger.class);
         assertThat(number.getValue()).isEqualTo(1);
+    }
+
+    @Test
+    @DisplayName("Should throw IllegalArgumentException when value is 0 or lower")
+    void givenInvalidPositiveInteger_whenInstantiating_thenThrowIllegalArgumentException() {
+        assertThrows(
+            IllegalArgumentException.class,
+            () -> PositiveInteger.of(0)
+        );
     }
 }
