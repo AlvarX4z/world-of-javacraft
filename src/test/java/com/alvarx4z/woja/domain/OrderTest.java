@@ -1,4 +1,4 @@
-package com.alvarx4z.woja.domain.invariants;
+package com.alvarx4z.woja.domain;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -6,15 +6,15 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
-final class PositiveIntegerTest {
+final class OrderTest {
 
     @Test
-    @DisplayName("Should instantiate correctly a PositiveInteger")
+    @DisplayName("Should instantiate correctly an Order")
     void givenPositiveInteger_whenInstantiating_thenInstantiatesCorrectly() {
-        PositiveInteger number = PositiveInteger.of(1);
+        Order order = Order.of(1);
 
-        assertThat(number).isInstanceOf(PositiveInteger.class);
-        assertThat(number.getValue()).isEqualTo(1);
+        assertThat(order).isInstanceOf(Order.class);
+        assertThat(order.getValue()).isEqualTo(1);
     }
 
     @Test
@@ -22,7 +22,7 @@ final class PositiveIntegerTest {
     void givenInvalidPositiveInteger_whenInstantiating_thenThrowIllegalArgumentException() {
         assertThrows(
             IllegalArgumentException.class,
-            () -> PositiveInteger.of(0)
+            () -> Order.of(0)
         );
     }
 }
