@@ -15,6 +15,10 @@ public final class ExpansionsResponseDTO {
         this.expansions = expansions;
     }
 
+    public List<ExpansionResponseDTO> getExpansions() {
+        return expansions;
+    }
+
     public static ExpansionsResponseDTO of(List<ExpansionResponseDTO> expansions) {
         return new ExpansionsResponseDTO(expansions);
     }
