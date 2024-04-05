@@ -70,6 +70,8 @@ public enum Expansion {
         Year.of(2022)
     );
 
+    public static final int TOTAL_EXPANSIONS = Expansion.values().length;
+
     private final UUID id;
     private final Order order;
     private final Name title;

@@ -15,6 +15,6 @@ final class GetAllExpansionsUseCaseTest {
         Expansion[] result = useCase.execute();
 
         assertThat(result).isInstanceOf(Expansion[].class);
-        assertThat(result.length).isEqualTo(10);
+        assertThat(result.length).isEqualTo(Expansion.TOTAL_EXPANSIONS);
     }
 }
