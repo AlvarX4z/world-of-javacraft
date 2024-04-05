@@ -1,6 +1,6 @@
 package com.alvarx4z.woja.infrastructure.controller;
 
-import com.alvarx4z.woja.application.GetAllExpansionsUseCase;
+import com.alvarx4z.woja.application.usecase.GetAllExpansionsUseCase;
 import com.alvarx4z.woja.domain.Expansion;
 import com.alvarx4z.woja.infrastructure.controller.dto.mapper.ExpansionDTOMapper;
 import com.alvarx4z.woja.infrastructure.controller.dto.response.ExpansionsResponseDTO;

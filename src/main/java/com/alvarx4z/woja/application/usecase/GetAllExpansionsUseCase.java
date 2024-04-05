@@ -1,4 +1,4 @@
-package com.alvarx4z.woja.application;
+package com.alvarx4z.woja.application.usecase;
 
 import com.alvarx4z.woja.domain.Expansion;
 
