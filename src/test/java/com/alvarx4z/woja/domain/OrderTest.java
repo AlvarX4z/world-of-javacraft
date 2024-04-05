@@ -10,7 +10,7 @@ final class OrderTest {
 
     @Test
     @DisplayName("Should instantiate correctly an Order")
-    void givenPositiveInteger_whenInstantiating_thenInstantiatesCorrectly() {
+    void givenOrder_whenInstantiating_thenInstantiatesCorrectly() {
         Order order = Order.of(1);
 
         assertThat(order).isInstanceOf(Order.class);
@@ -19,7 +19,7 @@ final class OrderTest {
 
     @Test
     @DisplayName("Should throw IllegalArgumentException when value is 0 or lower")
-    void givenInvalidPositiveInteger_whenInstantiating_thenThrowIllegalArgumentException() {
+    void givenInvalidOrder_whenInstantiating_thenThrowIllegalArgumentException() {
         assertThrows(
             IllegalArgumentException.class,
             () -> Order.of(0)
