@@ -24,8 +24,8 @@ public enum Expansion {
     WRATH_LICH_KING(
         randomUUID(),
         Order.of(3),
-        Name.of("Wrath of the Lich King"), Year
-        .of(2008)
+        Name.of("Wrath of the Lich King"),
+        Year.of(2008)
     ),
     CATACLYSM(
         randomUUID(),
