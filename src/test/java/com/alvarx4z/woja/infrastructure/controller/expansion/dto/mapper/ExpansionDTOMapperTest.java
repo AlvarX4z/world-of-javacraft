@@ -1,7 +1,8 @@
-package com.alvarx4z.woja.infrastructure.controller.dto.mapper;
+package com.alvarx4z.woja.infrastructure.controller.expansion.dto.mapper;
 
 import com.alvarx4z.woja.domain.Expansion;
-import com.alvarx4z.woja.infrastructure.controller.dto.response.ExpansionsResponseDTO;
+import com.alvarx4z.woja.infrastructure.controller.expansion.dto.mapper.ExpansionDTOMapper;
+import com.alvarx4z.woja.infrastructure.controller.expansion.dto.response.ExpansionsResponseDTO;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

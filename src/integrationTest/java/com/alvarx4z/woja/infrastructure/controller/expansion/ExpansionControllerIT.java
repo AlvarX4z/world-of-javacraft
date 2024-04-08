@@ -1,8 +1,9 @@
-package com.alvarx4z.woja.infrastructure.controller;
+package com.alvarx4z.woja.infrastructure.controller.expansion;
 
 import com.alvarx4z.woja.TestUtil;
 import com.alvarx4z.woja.application.usecase.GetAllExpansionsUseCase;
 import com.alvarx4z.woja.domain.Expansion;
+import com.alvarx4z.woja.infrastructure.controller.expansion.ExpansionController;
 import io.restassured.module.mockmvc.RestAssuredMockMvc;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

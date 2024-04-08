@@ -1,9 +1,9 @@
-package com.alvarx4z.woja.infrastructure.controller;
+package com.alvarx4z.woja.infrastructure.controller.expansion;
 
 import com.alvarx4z.woja.application.usecase.GetAllExpansionsUseCase;
 import com.alvarx4z.woja.domain.Expansion;
-import com.alvarx4z.woja.infrastructure.controller.dto.mapper.ExpansionDTOMapper;
-import com.alvarx4z.woja.infrastructure.controller.dto.response.ExpansionsResponseDTO;
+import com.alvarx4z.woja.infrastructure.controller.expansion.dto.mapper.ExpansionDTOMapper;
+import com.alvarx4z.woja.infrastructure.controller.expansion.dto.response.ExpansionsResponseDTO;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
