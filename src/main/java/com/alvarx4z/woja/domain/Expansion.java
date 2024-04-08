@@ -24,8 +24,8 @@ public enum Expansion {
     WRATH_LICH_KING(
         randomUUID(),
         Order.of(3),
-        Name.of("Wrath of the Lich King"), Year
-        .of(2008)
+        Name.of("Wrath of the Lich King"),
+        Year.of(2008)
     ),
     CATACLYSM(
         randomUUID(),
@@ -69,6 +69,8 @@ public enum Expansion {
         Name.of("Dragonflight"),
         Year.of(2022)
     );
+
+    public static final int TOTAL_EXPANSIONS = Expansion.values().length;
 
     private final UUID id;
     private final Order order;

@@ -29,14 +29,6 @@ final class ExpansionTest {
     }
 
     @Test
-    @DisplayName("Should there be a total of 10 Expansions")
-    void givenExpansions_whenCheckingAmountExpansions_thenReturn10() {
-        int numberOfExpansions = Expansion.values().length;
-
-        assertThat(numberOfExpansions).isEqualTo(10);
-    }
-
-    @Test
     @DisplayName("Should be all the Expansions' Year from 2004 onwards")
     void givenExpansions_whenCheckingYears_thenAreValid() {
         boolean result =

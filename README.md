@@ -1,14 +1,16 @@
-# world-of-javacraft
-A Java and Spring Boot API application modeled after the idea of a Playable Character from World of Warcraft.
+# World of Javacraft
+A Java and Spring Boot API application modeled after the idea of several elements from World of Warcraft.
 
 ---
 
-## Index
+## :card_index_dividers: Index
 
 - [Index](#index)
 - [Technologies and Tools](#technologies-and-tools)
+- [Use Cases](#use-cases)
+  - [Expansions](#expansions)
 
-## Technologies and Tools
+## :toolbox: Technologies and Tools
 
 - Java 21 (Temurin)
 - Gradle
@@ -20,6 +22,12 @@ A Java and Spring Boot API application modeled after the idea of a Playable Char
 - GitHub Dependabot
 - GitHub Actions
 - IntelliJ IDEA Community Edition
+
+## :dart: Use Cases
+
+### Expansions
+
+- **GetAllExpansionsUseCase** - Returns all WoW's Expansions.  
 
 ---
 
