@@ -20,6 +20,7 @@ dependencies {
 
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'org.assertj:assertj-core:3.25.3'
+	testImplementation 'io.rest-assured:spring-mock-mvc:5.4.0'
 }
 
 tasks.named('test') {
