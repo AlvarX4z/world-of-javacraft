@@ -7,6 +7,8 @@ A Java and Spring Boot API application modeled after the idea of several element
 
 - [Index](#index)
 - [Technologies and Tools](#technologies-and-tools)
+- [Use Cases](#use-cases)
+  - [Expansions](#expansions)
 
 ## Technologies and Tools
 
@@ -20,6 +22,12 @@ A Java and Spring Boot API application modeled after the idea of several element
 - GitHub Dependabot
 - GitHub Actions
 - IntelliJ IDEA Community Edition
+
+## Use Cases
+
+### Expansions
+
+- **GetAllExpansionsUseCase** - Returns all WoW's Expansions.  
 
 ---
 
