@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/expansions")
-public final class ExpansionController {
+public final class ExpansionController implements ExpansionControllerAPI {
 
     private final GetAllExpansionsUseCase getAllExpansionsUseCase;
 
