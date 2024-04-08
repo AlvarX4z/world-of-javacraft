@@ -1,4 +1,4 @@
-package com.alvarx4z.woja.infrastructure.controller.expansion;
+package com.alvarx4z.woja.infrastructure.controller;
 
 public interface BaseControllerAPI {
 
