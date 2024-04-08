@@ -1,4 +1,4 @@
-package com.alvarx4z.woja.infrastructure.controller.dto.response;
+package com.alvarx4z.woja.infrastructure.controller.expansion.dto.response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;

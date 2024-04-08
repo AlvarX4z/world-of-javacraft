@@ -1,8 +1,8 @@
-package com.alvarx4z.woja.infrastructure.controller.dto.mapper;
+package com.alvarx4z.woja.infrastructure.controller.expansion.dto.mapper;
 
 import com.alvarx4z.woja.domain.Expansion;
-import com.alvarx4z.woja.infrastructure.controller.dto.response.ExpansionResponseDTO;
-import com.alvarx4z.woja.infrastructure.controller.dto.response.ExpansionsResponseDTO;
+import com.alvarx4z.woja.infrastructure.controller.expansion.dto.response.ExpansionResponseDTO;
+import com.alvarx4z.woja.infrastructure.controller.expansion.dto.response.ExpansionsResponseDTO;
 
 import java.util.Arrays;
 
